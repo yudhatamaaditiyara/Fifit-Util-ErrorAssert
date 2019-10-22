@@ -21,224 +21,224 @@
 const method = {};
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.equal = function(aValue, bValue, status, message, headers){
 	this.assert(aValue == bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.strictEqual = function(aValue, bValue, status, message, headers){
 	this.assert(aValue === bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notEqual = function(aValue, bValue, status, message, headers){
 	this.assert(aValue != bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notStrictEqual = function(aValue, bValue, status, message, headers){
 	this.assert(aValue !== bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.lessThan = function(aValue, bValue, status, message, headers){
 	this.assert(aValue < bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notLessThan = function(aValue, bValue, status, message, headers){
 	this.assert(!(aValue < bValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.lessThanEqual = function(aValue, bValue, status, message, headers){
 	this.assert(aValue <= bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notLessThanEqual = function(aValue, bValue, status, message, headers){
 	this.assert(!(aValue <= bValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.greaterThan = function(aValue, bValue, status, message, headers){
 	this.assert(aValue > bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notGreaterThan = function(aValue, bValue, status, message, headers){
 	this.assert(!(aValue > bValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.greaterThanEqual = function(aValue, bValue, status, message, headers){
 	this.assert(aValue >= bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notGreaterThanEqual = function(aValue, bValue, status, message, headers){
 	this.assert(!(aValue >= bValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.in = function(aValue, bValue, status, message, headers){
 	this.assert(bValue in aValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notIn = function(aValue, bValue, status, message, headers){
 	this.assert(!(bValue in aValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.typeOf = function(aValue, bValue, status, message, headers){
 	this.assert(typeof aValue === bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notTypeOf = function(aValue, bValue, status, message, headers){
 	this.assert(typeof aValue !== bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.instanceOf = function(aValue, bValue, status, message, headers){
 	this.assert(aValue instanceof bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notInstanceOf = function(aValue, bValue, status, message, headers){
 	this.assert(!(aValue instanceof bValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.objectTypeOf = function(aValue, bValue, status, message, headers){
 	this.assert(Object.prototype.toString.call(aValue) === bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notObjectTypeOf = function(aValue, bValue, status, message, headers){
 	this.assert(Object.prototype.toString.call(aValue) !== bValue, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.hasOwnProperty = function(aValue, bValue, status, message, headers){
 	this.assert(Object.prototype.hashOwnProperty.call(aValue, bValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notHasOwnProperty = function(aValue, bValue, status, message, headers){
 	this.assert(!Object.prototype.hashOwnProperty.call(aValue, bValue), status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.null = function(value, status, message, headers){
 	this.assert(value == null, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.strictNull = function(value, status, message, headers){
 	this.assert(value === null, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.undefined = function(value, status, message, headers){
 	this.assert(value == void 0, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.strictUndefined = function(value, status, message, headers){
 	this.assert(value === void 0, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.true = function(value, status, message, headers){
 	this.assert(value == !0, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.strictTrue = function(value, status, message, headers){
 	this.assert(value === !0, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.false = function(value, status, message, headers){
 	this.assert(value == !1, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.strictFalse = function(value, status, message, headers){
 	this.assert(value === !1, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.ok = function(value, status, message, headers){
 	this.assert(value, status, message, headers);
 };
 
 /**
- * @inheritdoc
+ * {@inheritDoc}
  */
 method.notOk = function(value, status, message, headers){
 	this.assert(!value, status, message, headers);
