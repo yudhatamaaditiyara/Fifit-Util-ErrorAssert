@@ -16,7 +16,7 @@
 'use strict';
 
 const throws = require("fifit-util-errorthrow");
-const create = require("./create");
+const create = require("./lib/create");
 
 /**
  * @+
