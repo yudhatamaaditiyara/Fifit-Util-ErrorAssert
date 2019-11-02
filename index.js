@@ -17,11 +17,13 @@
 
 const throws = require("fifit-util-errorthrow");
 const create = require("./lib/create");
+const mixin = require("./lib/mixin");
 
 /**
  * @+
  */
 module.exports = {};
+module.exports.mixin = mixin;
 module.exports.create = create;
 module.exports.assert = create(throws);
 module.exports.errorAssert = create(throws.error);
